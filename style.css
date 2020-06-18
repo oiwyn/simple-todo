@@ -29,6 +29,21 @@ header, form{
     align-items: center;
 }
 
+h3{
+    text-align: center;
+    padding: 10px;
+    font-size: .8rem;
+    background-color: #e3e3e3;
+}
+
+h3 a{
+    text-decoration: none;
+}
+
+h3 a:hover{
+    border-bottom: 1px solid;
+}
+
 form input, form button{
     padding: .5rem;
     font-size: 1.5rem;
