@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+body.preload *{ 
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
+header{
+    font-size: 1rem;
+}
+
+header, form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #fff;
+}
+
+form button{
+    color: #aaaaaa;
+    cursor: pointer;
+    transition: all .1 ease;
+}
+
+form button:hover{
+    color: #999;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid #ddd;
+    transition: all .3s ease-in;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.complete-btn, .trash-btn{
+    background: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.complete-btn:hover, .trash-btn:hover{
+    opacity: 1;
+}
+
+.completed-todo-item{
+    text-decoration: line-through;
+    opacity: 0.2;
+    border: 1px solid grey;
+}
+
+.remove-todo-item{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none; 
+}
+
+.selection{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.selection::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .9rem;
+    pointer-events: none;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    color: #111;
+    background-color: #f9f9f9;
+    width: 15rem;
+    padding: .8rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
