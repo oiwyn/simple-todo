@@ -2,9 +2,7 @@
 A simple vanilla JavaScript project with the purpose to practice and improve my JavaScript skill.
 This app saves the to-do list to your web browser local storage.
 
-Thank you to DevEd for the awesome tutorial: 
-
-https://www.youtube.com/watch?v=Ttf3CEsEwMQ
+Thank you to DevEd for this awesome tutorial: https://www.youtube.com/watch?v=Ttf3CEsEwMQ
 
 | Features | Description | Status
 | --- | --- | --- |
